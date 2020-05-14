@@ -1,0 +1,17 @@
+
+<Ella>
+
+    <EllaAssets>
+        <BureauVeritas>
+            <Asset>MyAsset</Asset>
+        </BureauVeritas>
+    </EllaAssets>
+
+    <Shaders>
+        <TakeAll/>
+    </Shaders>
+
+    <VTS_Common>
+    </VTS_Common>
+
+</Ella>
