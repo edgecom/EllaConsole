@@ -18,10 +18,11 @@ for i in script_path:
         ella_path += i + "\\"
 
 print_debug("Found Ella in: " + ella_path)
+#/data/user/0/com.EllaActivity1/files/
+#toWhere = "/storage/emulated/0/data/user/0/Ella/"
+toWhere = "/data/user/0/com.EllaActivity1/files/"
 
-toWhere = "/storage/emulated/0/data/user/0/Ella/"
-
-product_path = os.path.dirname(os.path.realpath(__file__)) + "\MinimalProducts" + "\Example.xml"
+product_path = os.path.dirname(os.path.realpath(__file__)) + "\MinimalProducts" + "\BureauVeritas.xml"
 
 product = ET.parse(product_path)
 product_root: ET.Element = product.getroot()
@@ -68,4 +69,5 @@ for i in product_root.iter():
 
 
 for i in exportPahts:
+    print("Copying: " + i)
     CopyFile(i)
